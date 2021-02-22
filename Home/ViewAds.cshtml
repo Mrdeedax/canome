@@ -1,0 +1,187 @@
+﻿@model canome0._1.Models.ViewAds
+@{
+    ViewBag.Title = "ViewAds";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="~/Content/StyleSheet.css">
+<script src="../../../Scripts/MyScript.js"></script>
+<link rel="stylesheet" href="~/Content/w3.css">
+
+
+<h2 class="col-lg-offset-5">View Full Ad</h2>
+<hr />
+<!-- The grid: four columns -->
+<div class="row">
+    <div class="columnViewAds">
+        <img src="../../../images/room1.jfif" alt="Nature" width="280" height="200" onclick="myFunction(this);">
+    </div>
+    <div class="columnViewAds">
+        <img src="../../../images/room2.jfif" alt="Snow" width="280" height="200" onclick="myFunction(this);">
+    </div>
+    <div class="columnViewAds">
+        <img src="../../../images/room3.jfif" alt="Mountains" width="280" height="200" onclick="myFunction(this);">
+    </div>
+    <div class="columnViewAds">
+        <img src="../../../images/room4.jfif" alt="Lights" width="280" height="200" onclick="myFunction(this);">
+    </div>
+    <div class="columnViewAds">
+        <img src="../../../images/room5.jfif" alt="Lights" width="280" height="200" onclick="myFunction(this);">
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-xl-12">
+        <!-- The expanding image container -->
+        <div class="containerViewAds">
+            <!-- Close the image -->
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+            <!-- Expanded image -->
+            <img id="expandedImg" width="1100" height="600">
+
+            <!-- Image text -->
+            <div id="imgtext"></div>
+        </div>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-lg-8">
+        <div class="w3-card-4">
+            <header class="w3-container w3-white">
+                <h1 style="color: green">$1800</h1>
+            </header>
+            <hr />
+            <div class="w3-container">
+                <p>Beautiful house is available</p>
+                <p>205 Dundas St, Richmond Hill, M2M 4R4, ON <a style="color: blue" class="nav-link active" aria-current="page" href="#">View on map</a></p>
+                <p>Apartment</p>
+            </div>
+            <hr />
+            <footer class="w3-container w3-white">
+                <h5>3 Bed/2 Bath</h5>
+            </footer>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="w3-card">
+            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-body">
+                    <div class="input-group input-group-sm md-4">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Contact Marcel</span>
+                        <p></p>
+                        <input type="text" class="form-control" placeholder="Your Message.." aria-label="Sizing example input"
+                               aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <p></p>
+                    <div class="mt-2 pt-2 border-top">
+                        <button type="button" class="btn btn-primary btn-sm">Send</button>
+                        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <div class="w3-card">
+            <div class="card text-white btn-group-lg mb-3" style="max-width: 50rem;">
+                <div class="card-header" style="color: darkblue">Overview</div>
+                <hr />
+                <div class="card-body">
+                    <h5 class="card-title">Utilities Included</h5>
+                    <p class="card-text">Yes</p>
+                    <h5 class="card-title">Wifi and More</h5>
+                    <p class="card-text">Yes</p>
+                    <h5 class="card-title">Parking Included</h5>
+                    <p class="card-text">Yes</p>
+                    <h5 class="card-title">Agreement Type</h5>
+                    <p class="card-text">Yes</p>
+                    <h5 class="card-title">Move-In Date</h5>
+                    <p class="card-text">Yes</p>
+                    <h5 class="card-title">Pet Friendly</h5>
+                    <p class="card-text">Yes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="w3-card">
+            <div class="card text-white btn-group-lg mb-3" style="max-width: 50rem;">
+                <div class="card-header" style="color: darkblue">The Unit</div>
+                <hr />
+                <div class="card-body">
+                    <h5 class="card-title">Size (sqft)</h5>
+                    <p class="card-text">1000</p>
+                    <h5 class="card-title">Furnished</h5>
+                    <p class="card-text">Yes</p>
+                    <h5 class="card-title">Appliances</h5>
+                    <p class="card-text">Yes</p>
+                    <h5 class="card-title">Air conditioning</h5>
+                    <p class="card-text">Yes</p>
+                    <h5 class="card-title">Personal Outdoor Space</h5>
+                    <p class="card-text">Yes</p>
+                    <h5 class="card-title">Smoking Permitted</h5>
+                    <p class="card-text">Outdoor Only</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="w3-card">
+            <div class="card text-white btn-group-lg mb-3" style="max-width: 50rem;">
+                <div class="card-header" style="color: darkblue">The Building</div>
+                <hr />
+                <div class="card-body">
+                    <h5 class="card-title">Amenities</h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-xl-12">
+        <div class="w3-card" style="width: 80rem;">
+            <div class="card-body">
+                <h5 class="card-title" style="color:black">Description</h5>
+                <hr />
+                <p class="card-text">
+                    ***An opportunity you cannot afford to miss***
+
+                    Stunning is the only way to describe this newly renovated 3 bedroom, 1 bathroom apartment in the lower city of Hamilton. The property is located in a great neighbourhood close to amenities, schools and public transit and is perfect for entertaining family and friends.
+
+                    ***FEATURES***
+
+                    -3 bedrooms with 1 bathroom unit
+                    -spacious and bright, eat-in kitchen
+                    -laminate flooring throughout the unit which is very durable, easy to clean and maintain
+                    -private, in suite laundry for your convenience and privacy
+                    -convenient location, minutes to amenities, entertainment and school
+
+                    Not to mention many more features that you need to see for yourself
+
+                    ***INTERESTED IN SETTING UP A VIEWING?***
+
+                    Great, please tell us a little bit about yourself including your current living situation, when you're looking to move for and the best phone number to reach you at. Emails with no phone number will not be responded to.
+
+                    PLEASE NOTE: THIS IS THE MAIN FLOOR OF A HOME, NOT THE ENTIRE HOME!
+
+                    ***ASKING $1795 utilities***
+                    ***Available: December 15***
+
+                    =======================================================
+                    Property Professionally Managed By Welcome Home Management.
+
+                    Interested in putting Welcome Home Management to work for you? Learn more at https://welcomehomepropertymanagement.ca/experience/
+                    =======================================================
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<hr />

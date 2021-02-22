@@ -1,0 +1,338 @@
+﻿@model canome0._1.Models.PostAd
+@{
+    ViewBag.Title = "postAd";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <h2>Post ad</h2>
+</div>
+<div class="row">
+    <label for="exampleFormControlInput1" class="form-label">Ad Title</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Title">
+</div>
+<p></p>
+<hr />
+<div class="row">
+    <label>For Rent By:</label>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+            Owner
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">
+            Professional
+        </label>
+    </div>
+</div>
+<hr />
+<div class="row">
+
+    <label for="exampleFormControlInput1" class="form-label">Address</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Street">
+</div>
+<hr />
+<div class="row">
+    <label for="exampleFormControlInput1" class="form-label">City</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="City">
+</div>
+<hr />
+<div class="row">
+    <div class="form-floating">
+        <select class="form-select" id="floatingSelect1" aria-label="Floating label select example">
+            <option selected>Choose</option>
+            <option value="AB">AB</option>
+            <option value="BC">BC</option>
+            <option value="MB">MB</option>
+            <option value="NB">NB</option>
+            <option value="NL">NL</option>
+            <option value="NS">NS</option>
+            <option value="NT">NT</option>
+            <option value="NU">NU</option>
+            <option value="ON">ON</option>
+            <option value="PEI">PEI</option>
+            <option value="QC">QC</option>
+            <option value="SK">SK</option>
+            <option value="YK">YK</option>
+        </select>
+        <label for="floatingSelect">Province</label>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <label for="exampleFormControlInput1" class="form-label">Pin code</label>
+    <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Pin code">
+</div>
+<hr />
+<div class="row">
+    <label for="exampleFormControlInput1" class="form-label">Date of Availability</label>
+    <input type="date" class="form-control" id="exampleFormControlInput3" placeholder="Date">
+</div>
+<hr />
+<div class="row">
+    <div class="form-floating">
+        <select class="form-select" id="floatingSelect2" aria-label="Floating label select example">
+            <option selected>Choose</option>
+            <option value="House">House</option>
+            <option value="Apartment">Apartment</option>
+            <option value="Condos">Condos</option>
+        </select>
+        <label for="floatingSelect">Type of property</label>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="form-floating">
+        <select class="form-select" id="floatingSelect3" aria-label="Floating label select example">
+            <option selected>Choose</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value=">10">>10</option>
+        </select>
+        <label for="floatingSelect">Number of bedrooms</label>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="form-floating">
+        <select class="form-select" id="floatingSelect4" aria-label="Floating label select example">
+            <option selected>Choose</option>
+            <option value="1">1</option>
+            <option value="1.5">1.5</option>
+            <option value="2">2</option>
+            <option value="2.5">2.5</option>
+            <option value="3">3</option>
+            <option value="3.5">3.5</option>
+            <option value="4">4</option>
+            <option value="4.5">4.5</option>
+            <option value="5">5</option>
+            <option value="5.5">5.5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value=">10">>10</option>
+        </select>
+        <label for="floatingSelect">Number of washrooms</label>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <label for="floatingTextarea2">Furnished:</label>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault3">
+        <label class="form-check-label" for="flexRadioDefault3">
+            No
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault4" checked>
+        <label class="form-check-label" for="flexRadioDefault4">
+            Yes
+        </label>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <label for="floatingTextarea3">Pet Friendly:</label>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefault5">
+        <label class="form-check-label" for="flexRadioDefault5">
+            No
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefault6" checked>
+        <label class="form-check-label" for="flexRadioDefault6">
+            Yes
+        </label>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <label for="floatingTextarea3">Utilities Included:</label>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault7">
+        <label class="form-check-label" for="flexRadioDefault5">
+            No
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault8" checked>
+        <label class="form-check-label" for="flexRadioDefault6">
+            Yes
+        </label>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <label for="floatingTextarea3">Wifi Included:</label>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault5">
+        <label class="form-check-label" for="flexRadioDefault5">
+            No
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault6" checked>
+        <label class="form-check-label" for="flexRadioDefault6">
+            Yes
+        </label>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="form-floating">
+        <select class="form-select" id="floatingSelect4" aria-label="Floating label select example">
+            <option selected>Choose</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value=">10">>10</option>
+        </select>
+        <label for="floatingSelect">Number Of Parking Spot Included</label>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <label for="exampleFormControlInput1" class="form-label">Size</label>
+    <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Sqft">
+</div>
+<hr />
+<div class="row">
+    <label for="floatingTextarea3">Apliance:</label>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault5">
+        <label class="form-check-label" for="flexRadioDefault9">
+            No
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault6" checked>
+        <label class="form-check-label" for="flexRadioDefault10">
+            Yes
+        </label>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <label for="floatingTextarea3">Air Conditioning:</label>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault11" id="flexRadioDefault5">
+        <label class="form-check-label" for="flexRadioDefault11">
+            No
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault11" id="flexRadioDefault6" checked>
+        <label class="form-check-label" for="flexRadioDefault12">
+            Yes
+        </label>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <label for="floatingTextarea3">Personal Outdoor Space:</label>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault12" id="flexRadioDefault5">
+        <label class="form-check-label" for="flexRadioDefault13">
+            No
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault12" id="flexRadioDefault6" checked>
+        <label class="form-check-label" for="flexRadioDefaul14">
+            Yes
+        </label>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="form-floating">
+        <select class="form-select" id="floatingSelect4" aria-label="Floating label select example">
+            <option selected>Choose</option>
+            <option value="No">No</option>
+            <option value="Yes">Yes</option>
+            <option value="Outside Only">Outside Only</option>
+        </select>
+        <label for="floatingSelect">Smoking Permitted</label>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="form-floating">
+        <label for="floatingTextarea2">Amenities</label>
+        <textarea class="form-control" placeholder="List Amenities.." id="floatingTextarea2" style="height: 70px"></textarea>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">$.00</span>
+        <input type="number" class="form-control" placeholder="Rent" aria-label="Rent" aria-describedby="addon-wrapping">
+    </div>
+    <hr />
+    <div class="form-floating">
+        <label for="floatingTextarea2">Description</label>
+        <textarea class="form-control" placeholder="wright here.." id="floatingTextarea2" style="height: 100px"></textarea>
+    </div>
+</div>
+<hr />
+<!--image upload-->
+<div class="row">
+    <div class="col-md-6">
+        <div class="input-group">
+            <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+            <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Upload</button><p></p>
+            <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+            <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Upload</button><p></p>
+            <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+            <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Upload</button><p></p>
+            <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+            <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Upload</button><p></p>
+            <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+            <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Upload</button><p></p>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="input-group">
+            <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+            <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Upload</button><p></p>
+            <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+            <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Upload</button><p></p>
+            <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+            <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Upload</button><p></p>
+            <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+            <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Upload</button><p></p>
+            <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+            <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Upload</button><p></p>
+        </div>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <a class="btn btn-primary" href="#.." role="button">Post Ad</a>
+</div>
+
+
+
+

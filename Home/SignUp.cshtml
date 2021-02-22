@@ -1,0 +1,56 @@
+﻿@model canome0._1.Models.SignUp
+@{
+    ViewBag.Title = "SignUp";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Sign Up</h2>
+<hr />
+<form>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="form-floating mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="userEmail">
+            </div>
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+    </div>
+    <p></p>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="form-floating">
+                <label for="exampleInputEmail1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="userPassword">
+            </div>
+        </div>
+    </div>
+    <p></p>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="form-floating">
+                <label for="exampleInputEmail1" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="userConfirmedPassword">
+            </div>
+        </div>
+    </div>
+    <p></p>
+    <div class="row">
+        <div class="col-md-3">
+            <a class="btn btn-primary" href="../Home/ProfileCreation" role="button">Submit</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <ul class="nav">
+                <li class="nav-item">
+                    <p>
+                        Already have an account?
+                        <a class="nav-link active" aria-current="page" href="../Home/LogIn">Log in</a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</form>
+

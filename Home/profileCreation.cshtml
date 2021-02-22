@@ -1,0 +1,30 @@
+﻿@model canome0._1.Models.profileCreation
+@{
+    ViewBag.Title = "profileCreation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Creat Profile</h2>
+    <label for="exampleInputEmail1" class="form-label">First Name</label>
+    <input class="form-control" type="text" placeholder="First name" aria-label="First name" wrightonly>
+    <p></p>
+    <label for="exampleInputEmail1" class="form-label">Last Name</label>
+    <input class="form-control" type="text" placeholder="Last name" aria-label="Last name" wrightonly>
+    <p></p>
+    <label for="exampleInputEmail1" class="form-label">Organization</label>
+    <input class="form-control" type="text" placeholder="None if you are an indidividual" aria-label="None if you are an indidividual" wrightonly>
+    <p></p>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+            under 18
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">
+            over 18
+        </label>
+        <p></p>
+        <a class="btn btn-primary" href="../Home/Profile" role="button">Submit</a>
+    </div>
